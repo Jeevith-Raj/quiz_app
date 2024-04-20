@@ -43,3 +43,9 @@ function startquiz(){
     showquestion();
 }
 
+function showquestion(){
+    let currentquestion = questions[currentquestionindex];
+    let questionno = currentquestionindex + 1;
+    questionElement.innerHTML = questionno +"." + currentquestion.question;
+}
+
